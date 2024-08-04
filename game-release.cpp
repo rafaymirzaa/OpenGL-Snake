@@ -1,8 +1,4 @@
-/*
-Abdur Rafay Mirza
-23I-6009
-DS-C
-*/
+
 
 #ifndef TETRIS_CPP_
 #define TETRIS_CPP_
@@ -76,14 +72,14 @@ void Display()
     	
    // border detection  (use this if you want snake to die when it collides with the boundaries)
    
-   /*if (snakeArr[0][0] < 0 || snakeArr[0][0] >= 650 || snakeArr[0][1] < 0 || snakeArr[0][1] >= 650) {
+   if (snakeArr[0][0] < 0 || snakeArr[0][0] >= 650 || snakeArr[0][1] < 0 || snakeArr[0][1] >= 650) {
    cout << "You killed yourself"<<endl;
         exit(0);
-   }*/
+   }
                                                         // TELEPORTATION
                                                         
                                                         
-if (snakeArr[0][0] < 0) 
+/*if (snakeArr[0][0] < 0) 
 {
     snakeArr[0][0] = 630; // Teleport to the right side
 } 
@@ -98,7 +94,7 @@ if (snakeArr[0][1] < 0)
 } else if (snakeArr[0][1] >= 650) 
 {
     snakeArr[0][1] = 0; // Teleport to the top
-}
+}*/
 currentSnakeX = snakeArr[0][0];
 currentSnakeY = snakeArr[0][1];  // initalize the snake's x and y coordinates after they have succesfully teleported :D
 
